@@ -4,31 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.unmadesai.newmaw.MainActivity"
     >
-
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:src="@mipmap/wish"/>
     <Button
         android:id="@+id/btnVolunteer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volunteer"
         android:onClick="volunteer"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="150dp"
         android:layout_gravity="center"
         
         android:background="#005eff"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:layout_marginLeft="-330dp"/>
 
     <Button
         android:id="@+id/btnDonor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Donor"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="150dp"
         android:layout_gravity="center"
         
         android:background="#005eff"
         android:textColor="#ffffff"
-         />
+         android:layout_marginLeft="120dp"/>
 </LinearLayout>
