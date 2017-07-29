@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.unmadesai.newmaw.donor_login">
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="387dp"
+        android:layout_below="@+id/Dpassword"
+        android:layout_alignRight="@+id/Dpassword"
+        android:layout_alignEnd="@+id/Dpassword"
+        android:layout_marginTop="88dp" />
+
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="387dp"
+        android:layout_alignBaseline="@+id/Login"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_alignLeft="@+id/Dpassword"
+        android:layout_alignStart="@+id/Dpassword" />
+
+
+
+    <EditText
+        android:id="@+id/Dusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter username"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Dpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:layout_below="@+id/Dusername"
+        android:layout_alignLeft="@+id/Dusername"
+        android:layout_alignStart="@+id/Dusername"
+        android:layout_marginTop="37dp" />
+</RelativeLayout>
