@@ -26,8 +26,8 @@
         tools:layout_editor_absoluteX="36dp"
         android:layout_alignBaseline="@+id/etPhone"
         android:layout_alignBottom="@+id/etPhone"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/Dname"
+        android:layout_alignStart="@+id/Dname" />
 
     <TextView
         android:id="@+id/Demail"
@@ -39,7 +39,9 @@
         android:layout_alignBaseline="@+id/etMail"
         android:layout_alignBottom="@+id/etMail"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
 
     <TextView
         android:id="@+id/Dadd"
@@ -75,8 +77,10 @@
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="16dp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/Dphone"
-        android:layout_toEndOf="@+id/Dphone" />
+        android:layout_toRightOf="@+id/Demail"
+        android:layout_toEndOf="@+id/Demail"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
 
     <EditText
         android:id="@+id/etPhone"
@@ -87,10 +91,10 @@
         android:hint="Enter number"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="101dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="31dp"
         android:layout_below="@+id/etName"
-        android:layout_alignLeft="@+id/etMail"
-        android:layout_alignStart="@+id/etMail" />
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName" />
 
     <EditText
         android:id="@+id/etMail"
@@ -101,10 +105,10 @@
         android:hint="Enter email address"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="192dp"
+        android:layout_marginBottom="13dp"
         android:layout_above="@+id/etAdd"
-        android:layout_toRightOf="@+id/Dphone"
-        android:layout_toEndOf="@+id/Dphone"
-        android:layout_marginBottom="20dp" />
+        android:layout_alignLeft="@+id/etPhone"
+        android:layout_alignStart="@+id/etPhone" />
 
     <EditText
         android:id="@+id/etAdd"
