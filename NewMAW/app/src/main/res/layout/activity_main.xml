@@ -31,12 +31,5 @@
         android:text="Button"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="265dp" />
-</android.support.constraint.ConstraintLayout>
-        android:text="Donor"
-        android:layout_marginTop="150dp"
-        android:layout_gravity="center"
 
-        android:background="#005eff"
-        android:textColor="#ffffff"
-         android:layout_marginLeft="120dp"/>
 </LinearLayout>

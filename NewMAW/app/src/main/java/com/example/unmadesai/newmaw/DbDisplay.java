@@ -17,7 +17,7 @@ public class DbDisplay extends AppCompatActivity {
     public TextView textView2;
     public TextView textView3;
     public Button btn;
-    public static final String jsonUrlString  = "http://10.0.2.2/team13/getsampledata.php";
+    public static final String jsonUrlString  = "http://10.0.2.2/team13/register.php";
 
 
 

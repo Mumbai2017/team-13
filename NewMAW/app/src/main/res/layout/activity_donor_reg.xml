@@ -89,11 +89,10 @@
         android:hint="Enter name"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="13dp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/Demail"
-        android:layout_toEndOf="@+id/Demail"
-        android:layout_marginLeft="33dp"
-        android:layout_marginStart="33dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:id="@+id/etPhone"
@@ -104,10 +103,10 @@
         android:hint="Enter number"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="101dp"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/etName"
-        android:layout_alignLeft="@+id/etName"
-        android:layout_alignStart="@+id/etName" />
+        android:layout_above="@+id/etMail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp" />
 
     <EditText
         android:id="@+id/etMail"
@@ -135,6 +134,29 @@
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/etMail"
         android:layout_alignStart="@+id/etMail" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRegister"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/etAdd"
+        android:layout_alignStart="@+id/etAdd" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignRight="@+id/Dadd"
+        android:layout_alignEnd="@+id/Dadd" />
 
 
 </RelativeLayout>
