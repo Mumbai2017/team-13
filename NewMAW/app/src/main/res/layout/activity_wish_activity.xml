@@ -26,6 +26,9 @@
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
         android:text="Button"
+        
+        android:background="#005eff"
+        android:textColor="#ffffff"
         android:layout_alignBaseline="@+id/tvCity1"
         android:layout_alignBottom="@+id/tvCity1"
         android:layout_alignParentRight="true"
@@ -49,7 +52,10 @@
         android:layout_alignBaseline="@+id/tvCity3"
         android:layout_alignBottom="@+id/tvCity3"
         android:layout_alignLeft="@+id/btnCity1"
-        android:layout_alignStart="@+id/btnCity1" />
+        android:layout_alignStart="@+id/btnCity1" 
+        
+        android:background="#005eff"
+        android:textColor="#ffffff"/>
 
     <TextView
         android:id="@+id/tvCity3"
@@ -69,7 +75,10 @@
         android:layout_alignBaseline="@+id/tvCity2"
         android:layout_alignBottom="@+id/tvCity2"
         android:layout_alignLeft="@+id/btnCity2"
-        android:layout_alignStart="@+id/btnCity2" />
+        android:layout_alignStart="@+id/btnCity2" 
+        
+        android:background="#005eff"
+        android:textColor="#ffffff"/>
 
 
 
