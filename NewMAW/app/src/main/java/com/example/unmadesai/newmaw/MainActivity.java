@@ -13,11 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-
-
-        btnDonor= (Button) findViewById(R.id.btnDonor);
+     /*   Intent i=new Intent(MainActivity.this,DbDisplay.class);
+        startActivity(i);
+     */   btnDonor= (Button) findViewById(R.id.btnDonor);
         btnVolunteer= (Button) findViewById(R.id.btnVolunteer);
 
         btnDonor.setOnClickListener(new View.OnClickListener() {

@@ -21,7 +21,7 @@ public class TrackerActivity extends AppCompatActivity {
 
     Button btnTrack;
     TextView tvLatitude,tvLongitude,tvLocation;
-    String server_url="http://192.168.0.104/gps_info.php";
+    //String server_url="http://192.168.0.104/gps_info.php";
     AlertDialog.Builder   builder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

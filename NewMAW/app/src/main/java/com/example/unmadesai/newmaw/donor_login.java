@@ -13,6 +13,8 @@ Button btnLogin,btnSignup;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor_login);
 
+        btnLogin=(Button)findViewById(R.id.btnLogin);
+        btnSignup=(Button)findViewById(R.id.btnSignup);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
     @Override
