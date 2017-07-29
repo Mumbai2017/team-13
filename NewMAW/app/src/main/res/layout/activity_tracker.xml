@@ -10,7 +10,9 @@
         android:id="@+id/btnTrack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Wishes Near Me"
+        android:background="#005eff"
+        android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="101dp" />
@@ -19,22 +21,26 @@
         android:id="@+id/tvLatitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Latitude "
+        android:text="171.62 "
         android:layout_above="@+id/tvLongitude"
         android:layout_alignLeft="@+id/tvLongitude"
         android:layout_alignStart="@+id/tvLongitude"
-        android:layout_marginBottom="123dp" />
+        android:layout_marginBottom="123dp"
+        android:textColor="#005eff"
+        />
 
     <TextView
         android:id="@+id/tvLongitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Longitude "
+        android:text="83.42"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="176dp"
         android:layout_above="@+id/btnTrack"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="57dp" />
+        android:layout_marginBottom="57dp"
+        android:textColor="#005eff"
+        />
 
     <TextView
         android:id="@+id/tvLocation"

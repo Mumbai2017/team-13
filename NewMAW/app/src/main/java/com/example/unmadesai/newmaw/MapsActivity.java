@@ -61,7 +61,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     LatLng latLng = new LatLng(latitude,longitude);
                     Geocoder geocoder = new Geocoder(getApplicationContext());
                     try {
-                        List<Address> list=geocoder.getFromLocation(latitude,longitude,1);
+                        List<Address> list=geocoder.getFromLocation(latitude,longitude,10);
                         String locality = list.get(0).getSubLocality()+"";
                         Log.d("locayy",locality);
                         mMap.addMarker(new MarkerOptions().position(latLng).title(locality));
