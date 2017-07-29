@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.unmadesai.newmaw.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.unmadesai.newmaw.MainActivity"
+    >
 
     <Button
         android:id="@+id/btnVolunteer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="154dp"
-        android:onClick="goToVolunteer()"/>
+        android:text="Volunteer"
+        android:onClick="volunteer"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btnDonor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="269dp"
-        android:onClick="goToDonor()"/>
-</android.support.constraint.ConstraintLayout>
+        android:text="Donor"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+         />
+</LinearLayout>
