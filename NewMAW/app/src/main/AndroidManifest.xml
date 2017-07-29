@@ -19,7 +19,8 @@
         <activity android:name=".donor_login" />
         <activity android:name=".donor_reg" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".wish_activity"></activity>
+        <activity android:name=".wish_activity" />
+        <activity android:name=".DbDisplay"></activity>
     </application>
 
 </manifest>
