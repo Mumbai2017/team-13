@@ -7,7 +7,26 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+
 package com.example.sarvajna.plainnotes2;
+        btnSubmit= (Button) findViewById(R.id.btnSubmit);
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i=new Intent(Main2Activity.this,MainActivity.class);
+                startActivity(i);
+
+            }
+        });
+
+    }
+
+
+    }
+
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
