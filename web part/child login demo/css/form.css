@@ -1,0 +1,31 @@
+.button {
+   
+    padding: 16px 70px;
+    text-align: center;
+    font-size: 20px;
+    border-radius:30px;
+   
+	}
+
+
+.button{
+    background-color:maroon ; 
+    color: white; 
+}
+
+.button:hover {
+    background-color:#990000;
+    color: black;
+}
+
+*:focus { outline: 0 !important; } 
+
+@media screen and (max-width: 767px) {
+  .button{max-width:100%;
+      padding:20px;
+	white-space:normal;
+	word-wrap:normal;
+
+  }
+
+}
