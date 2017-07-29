@@ -18,7 +18,7 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="159dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:src="@mipmap/maw_logo"
         android:layout_centerVertical="true"
