@@ -1,5 +1,6 @@
 package com.example.unmadesai.newmaw;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,7 +42,7 @@ public class donor_reg extends AppCompatActivity {
 
                 insertJSON(jsonUrlString);
             }
-        }
+        });
     }
     private void insertJSON(String url) {
         class GetJSON extends AsyncTask<String, Void, String> {
@@ -65,13 +66,12 @@ public class donor_reg extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
-                Toast.makeText(donor_reg.this, "You are now registered to MAW",Toast.LENGTH_SHORT).show();
+                Toast.makeText(donor_reg.this, "You are now registered to MAW", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(donor_reg.this, MainActivity.class);
+                startActivity(intent);
+
+
             }
-
         }
-
-        GetJSON gj = new GetJSON();
-        gj.execute(url);
     }
-
 }
