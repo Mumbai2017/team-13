@@ -26,7 +26,8 @@ Button btnLogin,btnSignup;
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(donor_login.this,donor_reg.class);
+                startActivity(i);
             }
         });
     }

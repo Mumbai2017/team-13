@@ -23,17 +23,17 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/tvCity2"
+        android:id="@+id/tvCity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
         android:text="Want to be a doctor,Mumbai"
-        android:layout_below="@+id/tvCity3"
+        android:layout_below="@+id/tvCity2"
         android:layout_alignLeft="@+id/tvCity1"
         android:layout_alignStart="@+id/tvCity1" />
 
     <Button
-        android:id="@+id/btnCity2"
+        android:id="@+id/btnCity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="200"
@@ -46,34 +46,28 @@
         android:textColor="#ffffff"/>
 
     <TextView
-        android:id="@+id/tvCity3"
+        android:id="@+id/tvCity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="Want to go to Imagica,Mumbai"
         android:layout_below="@+id/btnCity1"
-        android:layout_alignLeft="@+id/tvCity2"
-        android:layout_alignStart="@+id/tvCity2" />
+        android:layout_alignLeft="@+id/tvCity3"
+        android:layout_alignStart="@+id/tvCity3" />
 
     <Button
-        android:id="@+id/btnCity3"
+        android:id="@+id/btnCity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="300"
         android:layout_alignBaseline="@+id/tvCity2"
         android:layout_alignBottom="@+id/tvCity2"
-        android:layout_alignLeft="@+id/btnCity2"
-        android:layout_alignStart="@+id/btnCity2"
+        android:layout_alignLeft="@+id/btnCity3"
+        android:layout_alignStart="@+id/btnCity3"
 
         android:background="#005eff"
         android:textColor="#ffffff"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_search"
-        android:layout_toLeftOf="@+id/btnCity1"
-        android:layout_toStartOf="@+id/btnCity1" />
 
     <TextView
         android:id="@+id/tvCity1"
@@ -83,21 +77,12 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="22dp"
         android:text="Want to meet Sachin,Delhi"
-        android:layout_below="@+id/et_search"
+
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Filter"
-        android:layout_marginRight="27dp"
-        android:layout_marginEnd="27dp"
-        android:layout_alignBaseline="@+id/et_search"
-        android:layout_alignBottom="@+id/et_search"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+
+
 
 
 </RelativeLayout>

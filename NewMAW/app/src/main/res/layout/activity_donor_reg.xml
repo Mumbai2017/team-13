@@ -149,12 +149,10 @@
         android:layout_alignStart="@+id/etAdd" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:layout_alignBaseline="@+id/editText"
-        android:layout_alignBottom="@+id/editText"
         android:layout_alignRight="@+id/Dadd"
         android:layout_alignEnd="@+id/Dadd" />
 
