@@ -92,7 +92,7 @@ public class NotesProvider extends ContentProvider{
         if(uriMatcher.match(uri)==NOTES_ID){
             s=DBOpenHelper.NOTE_ID+ "=" +uri.getLastPathSegment();
         }
-        //return database.query(DBOpenHelper.TABLE_NOTES,DBOpenHelper.ALL_COLUMNS,s,null,null,null,DBOpenHelper.NOTE_CREATED+ " DESC");
+        return database.query(DBOpenHelper.TABLE_NOTES,DBOpenHelper.ALL_COLUMNS,s,null,null,null,DBOpenHelper.NOTE_CREATED+ " DESC");
     }
 
     @Nullable
