@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#f6f7eb"
+    android:background="#f6f7eb"
     tools:context="com.example.unmadesai.newmaw.donor_reg">
     <TextView
         android:id="@+id/Dname"
