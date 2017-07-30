@@ -153,7 +153,6 @@
         android:layout_height="wrap_content"
         android:hint="Password :"
         android:fontFamily="monospace"
-
         android:textColor="#2892d7"
         android:layout_alignBaseline="@+id/etPassword"
         android:layout_alignBottom="@+id/etPassword"
