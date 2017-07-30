@@ -34,9 +34,9 @@ public class donor_reg extends AppCompatActivity {
                 EditText email = (EditText)findViewById(R.id.etMail);
 
                 String mail = email.getText().toString();
-                EditText address2 = (EditText)findViewById(R.id.etPassword);
+                EditText address2 = (EditText)findViewById(R.id.etAdd);
                 String address = address2.getText().toString();
-                EditText pass = (EditText)findViewById(R.id.etName);
+                EditText pass = (EditText)findViewById(R.id.etPassword);
                 String password = pass.getText().toString();
               String jsonUrlString  = "http://localhost/team13/registerDonor.php?name="+nameET+"&contact="+number+"&email"+mail+"&address="+address+"&password="+password;
 
