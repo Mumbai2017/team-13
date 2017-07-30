@@ -66,7 +66,7 @@ public class donor_reg extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
-                Toast.makeText(donor_reg.this, "You are now registered to MAW", Toast.LENGTH_SHORT).show();
+                Toast.makeText(donor_reg.this, "You are now registered with MAW", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(donor_reg.this, MainActivity.class);
                 startActivity(intent);
 
