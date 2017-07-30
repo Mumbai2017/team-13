@@ -7,26 +7,14 @@
     tools:context="com.example.unmadesai.newmaw.wish_activity">
 
 
-    <TextView
-        android:id="@+id/tvCity1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="70dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="45dp"
-        android:text="TextView" />
-
     <Button
         android:id="@+id/btnCity1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
-        android:text="Button"
-        
+        android:text="100"
+
         android:background="#005eff"
         android:textColor="#ffffff"
         android:layout_alignBaseline="@+id/tvCity1"
@@ -39,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
-        android:text="TextView"
+        android:text="Want to be a doctor,Mumbai"
         android:layout_below="@+id/tvCity3"
         android:layout_alignLeft="@+id/tvCity1"
         android:layout_alignStart="@+id/tvCity1" />
@@ -48,12 +36,12 @@
         android:id="@+id/btnCity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="200"
         android:layout_alignBaseline="@+id/tvCity3"
         android:layout_alignBottom="@+id/tvCity3"
         android:layout_alignLeft="@+id/btnCity1"
-        android:layout_alignStart="@+id/btnCity1" 
-        
+        android:layout_alignStart="@+id/btnCity1"
+
         android:background="#005eff"
         android:textColor="#ffffff"/>
 
@@ -62,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:text="TextView"
+        android:text="Want to go to Imagica,Mumbai"
         android:layout_below="@+id/btnCity1"
         android:layout_alignLeft="@+id/tvCity2"
         android:layout_alignStart="@+id/tvCity2" />
@@ -71,16 +59,31 @@
         android:id="@+id/btnCity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="300"
         android:layout_alignBaseline="@+id/tvCity2"
         android:layout_alignBottom="@+id/tvCity2"
         android:layout_alignLeft="@+id/btnCity2"
-        android:layout_alignStart="@+id/btnCity2" 
-        
+        android:layout_alignStart="@+id/btnCity2"
+
         android:background="#005eff"
         android:textColor="#ffffff"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_search"/>
 
+    <TextView
+        android:id="@+id/tvCity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="59dp"
+        android:text="Want to meet Sachin,Delhi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
