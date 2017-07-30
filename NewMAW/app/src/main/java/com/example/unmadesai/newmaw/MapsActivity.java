@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -65,7 +66,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         String locality = list.get(0).getSubLocality()+"";
                         Log.d("locayy",locality);
                         mMap.addMarker(new MarkerOptions().position(latLng).title(locality));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15.2f));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,130.2f)); //zoom 20.2
+                        mMap.setMinZoomPreference(6.0f);
+                        mMap.setMaxZoomPreference(13.0f);
 
                     } catch (IOException e) {
                         e.printStackTrace();

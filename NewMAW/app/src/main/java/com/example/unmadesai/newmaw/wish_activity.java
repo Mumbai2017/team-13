@@ -1,5 +1,7 @@
 package com.example.unmadesai.newmaw;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
@@ -19,6 +21,7 @@ import org.json.JSONObject;
 
 public class wish_activity extends AppCompatActivity {
     TextView textView1, textView2, textView3;
+    Button bt1,bt2,bt3;
     Button b1;
     String json_url = "http://10.49.166.199/user_info.php";
 
@@ -31,6 +34,9 @@ public class wish_activity extends AppCompatActivity {
         textView2 = (TextView) findViewById(R.id.tvCity2);
 
         textView3 = (TextView) findViewById(R.id.tvCity3);
+bt1=(Button)findViewById(R.id.btnCity1);
+        bt2=(Button)findViewById(R.id.btnCity2);
+        bt3=(Button)findViewById(R.id.btnCity3);
 
 
         JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.POST, json_url, null, new Response.Listener<JSONObject>() {
@@ -53,6 +59,15 @@ public class wish_activity extends AppCompatActivity {
         });
         MySingleton.getInstance(wish_activity.this).addToRequestQueue(jsonObjectRequest);
 
+
+    }
+
+    public void payment(View v)
+    {
+
+        Uri linke=Uri.parse("https://www.hdfcbank.com/personal/making-payments/pay-with-payzapp/payzapp");
+        Intent i =new Intent(Intent.ACTION_VIEW,linke);
+        startActivity(i);
 
     }
 }
