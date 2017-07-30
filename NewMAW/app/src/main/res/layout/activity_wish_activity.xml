@@ -21,7 +21,8 @@
         android:layout_alignBaseline="@+id/tvCity1"
         android:layout_alignBottom="@+id/tvCity1"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="payment"/>
 
     <TextView
         android:id="@+id/tvCity3"
@@ -44,7 +45,8 @@
         android:layout_alignStart="@+id/btnCity1"
 
         android:background="#005eff"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:onClick="payment"/>
 
     <TextView
         android:id="@+id/tvCity2"
@@ -67,7 +69,8 @@
         android:layout_alignStart="@+id/btnCity3"
 
         android:background="#005eff"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:onClick="payment"/>
 
 
     <TextView
