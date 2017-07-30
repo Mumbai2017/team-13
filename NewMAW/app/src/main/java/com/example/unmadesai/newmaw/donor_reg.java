@@ -1,5 +1,4 @@
 package com.example.unmadesai.newmaw;
-
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -13,11 +12,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
 public class donor_reg extends AppCompatActivity {
-
     public Button btnRegister ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,14 +28,12 @@ public class donor_reg extends AppCompatActivity {
                 EditText numberET = (EditText)findViewById(R.id.etPhone);
                 String number = numberET.getText().toString();
                 EditText email = (EditText)findViewById(R.id.etMail);
-
                 String mail = email.getText().toString();
                 EditText address2 = (EditText)findViewById(R.id.etAdd);
                 String address = address2.getText().toString();
                 EditText pass = (EditText)findViewById(R.id.etPassword);
                 String password = pass.getText().toString();
               String jsonUrlString  = "http://localhost/team13/registerDonor.php?name="+nameET+"&contact="+number+"&email"+mail+"&address="+address+"&password="+password;
-
                 insertJSON(jsonUrlString);
             }
         });
@@ -53,24 +47,17 @@ public class donor_reg extends AppCompatActivity {
                     URL url = new URL(uri);
                     HttpURLConnection con = (HttpURLConnection) url.openConnection();
                     StringBuilder sb = new StringBuilder();
-
-
                     return sb.toString().trim();
-
                 } catch (Exception e) {
                     return null;
                 }
-
             }
-
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 Toast.makeText(donor_reg.this, "You are now registered with MAW", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(donor_reg.this, MainActivity.class);
                 startActivity(intent);
-
-
             }
         }
     }
