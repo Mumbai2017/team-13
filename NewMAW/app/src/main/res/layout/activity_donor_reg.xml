@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#f6f7eb"
     tools:context="com.example.unmadesai.newmaw.donor_reg">
     <TextView
         android:id="@+id/Dname"
@@ -89,10 +90,10 @@
         android:hint="Enter name"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="16dp"
-        android:layout_marginTop="13dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_above="@+id/etPhone"
+        android:layout_alignLeft="@+id/etPhone"
+        android:layout_alignStart="@+id/etPhone"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/etPhone"
@@ -104,9 +105,9 @@
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="101dp"
         android:layout_above="@+id/etMail"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="38dp" />
+        android:layout_alignLeft="@+id/etMail"
+        android:layout_alignStart="@+id/etMail"
+        android:layout_marginBottom="16dp" />
 
     <EditText
         android:id="@+id/etMail"
@@ -117,10 +118,10 @@
         android:hint="Enter email address"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="192dp"
-        android:layout_marginBottom="13dp"
         android:layout_above="@+id/etAdd"
-        android:layout_alignLeft="@+id/etPhone"
-        android:layout_alignStart="@+id/etPhone" />
+        android:layout_toRightOf="@+id/Demail"
+        android:layout_toEndOf="@+id/Demail"
+        android:layout_marginBottom="11dp" />
 
     <EditText
         android:id="@+id/etAdd"
@@ -131,32 +132,35 @@
         android:inputType="textPostalAddress"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="267dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/etMail"
-        android:layout_alignStart="@+id/etMail" />
+        android:layout_alignBottom="@+id/Dadd"
+        android:layout_toRightOf="@+id/Dadd"
+        android:layout_toEndOf="@+id/Dadd" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnRegister"
-        android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/etAdd"
-        android:layout_alignStart="@+id/etAdd" />
+        android:layout_below="@+id/Dadd"
+        android:layout_toRightOf="@+id/Dadd"
+        android:layout_toEndOf="@+id/Dadd"
+        android:layout_marginTop="13dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:layout_alignBaseline="@+id/editText"
-        android:layout_alignBottom="@+id/editText"
+        android:hint="Password :"
+        android:fontFamily="monospace"
+
+        android:textColor="#2892d7"
+        android:layout_alignBaseline="@+id/etPassword"
+        android:layout_alignBottom="@+id/etPassword"
         android:layout_alignRight="@+id/Dadd"
-        android:layout_alignEnd="@+id/Dadd" />
+        android:layout_alignEnd="@+id/Dadd"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
 
 
 </RelativeLayout>

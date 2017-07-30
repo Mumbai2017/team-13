@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class donor_login extends AppCompatActivity {
 Button btnLogin,btnSignup;
@@ -26,7 +27,11 @@ Button btnLogin,btnSignup;
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //Intent i = new Intent(donor_login.this,donor_reg.class);
+                //startActivity(i);
+                Toast.makeText(donor_login.this, "You're already signed in.", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(donor_login.this,MainActivity.class);
+                startActivity(i);
             }
         });
     }
