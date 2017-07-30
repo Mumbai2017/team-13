@@ -30,18 +30,11 @@ public class TrackerActivity extends  AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracker);
-        Button b=(Button)findViewById(R.id.button2);
+      //  Button b=(Button)findViewById(R.id.button2);
 
        /* private static final int RECOVERY_REQUEST = 1;
         private YouTubePlayerView youTubeView;
 */
-
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
 
         btnTrack= (Button) findViewById(R.id.btnTrack);
         tvLatitude= (TextView) findViewById(R.id.tvLatitude);

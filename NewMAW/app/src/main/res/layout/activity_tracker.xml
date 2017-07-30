@@ -24,21 +24,6 @@
         android:layout_alignLeft="@+id/tvLatitude"
         android:layout_alignStart="@+id/tvLatitude" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/tvLongitude"
-        android:layout_alignLeft="@+id/tvLatitude"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/tvLongitude"
-        android:layout_alignStart="@+id/tvLatitude"
-        android:layout_marginBottom="134dp"
-        android:background="#005eff"
-        android:backgroundTint="#25ced1"
-        android:text="Wishes Near Me"
-        android:textColor="#ffffff" />
-
     <TextView
         android:id="@+id/tvLatitude"
         android:layout_width="wrap_content"
